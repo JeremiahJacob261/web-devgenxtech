@@ -57,7 +57,7 @@ export default function Hero() {
         >
           <div className="relative">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/creative-SW6QDQbcVuwPgb6a2CYtYmRbsJa4k1.png"
+              src="/mainsuit.png"
               alt="Devgenxtech design concept"
               width={600}
               height={600}
