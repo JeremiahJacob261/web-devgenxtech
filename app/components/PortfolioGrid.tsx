@@ -1,51 +1,52 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const projects = [
   {
     id: 1,
-    title: "Minimalist Brand Identity",
-    description: "Clean and modern visual communication for a tech startup",
-    imageUrl: "/placeholder.svg?height=600&width=800",
-    category: "Branding",
-  },
-  {
-    id: 2,
-    title: "Sleek Web Experience",
-    description: "Elegant online presence for a luxury fashion brand",
-    imageUrl: "/placeholder.svg?height=800&width=600",
-    category: "Web Design",
-  },
-  {
-    id: 3,
-    title: "Intuitive Mobile App",
-    description: "User-friendly app design for a health and wellness company",
+    title: "HealthTrack Mobile App",
+    description: "Comprehensive health monitoring application with AdMob integration",
     imageUrl: "/placeholder.svg?height=600&width=800",
     category: "Mobile App",
   },
   {
-    id: 4,
-    title: "Elegant Digital Campaign",
-    description: "Sophisticated marketing strategy for a luxury automotive brand",
+    id: 2,
+    title: "E-commerce Platform",
+    description: "Scalable online shopping solution with advanced analytics",
     imageUrl: "/placeholder.svg?height=800&width=600",
-    category: "Digital Marketing",
+    category: "Web App",
+  },
+  {
+    id: 3,
+    title: "FinTech Dashboard",
+    description: "Real-time financial data visualization for investment professionals",
+    imageUrl: "/placeholder.svg?height=600&width=800",
+    category: "UI/UX Design",
+  },
+  {
+    id: 4,
+    title: "AdMob Revenue Optimizer",
+    description: "AI-powered tool for maximizing mobile ad revenue",
+    imageUrl: "/placeholder.svg?height=800&width=600",
+    category: "AdMob Solutions",
   },
   {
     id: 5,
-    title: "Refined UI/UX Design",
-    description: "Streamlined user interfaces for a financial services platform",
+    title: "Logistics Management System",
+    description: "End-to-end solution for supply chain optimization",
     imageUrl: "/placeholder.svg?height=600&width=800",
-    category: "UI/UX",
+    category: "Enterprise Software",
   },
   {
     id: 6,
-    title: "Minimalist Product Design",
-    description: "Sleek and functional design for a smart home device",
+    title: "Social Media Analytics",
+    description: "Comprehensive platform for tracking social media performance",
     imageUrl: "/placeholder.svg?height=800&width=600",
-    category: "Product Design",
+    category: "Data Analytics",
   },
 ]
 
@@ -53,8 +54,46 @@ const categories = ["All", ...new Set(projects.map((project) => project.category
 
 export default function PortfolioGrid() {
   const [filter, setFilter] = useState("All")
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [showLeftScroll, setShowLeftScroll] = useState(false)
+  const [showRightScroll, setShowRightScroll] = useState(false)
 
   const filteredProjects = filter === "All" ? projects : projects.filter((project) => project.category === filter)
+
+  // Check if scrolling is needed and update scroll button visibility
+  const checkScrollButtons = () => {
+    if (scrollContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current
+      setShowLeftScroll(scrollLeft > 0)
+      setShowRightScroll(scrollLeft < scrollWidth - clientWidth - 10) // 10px buffer
+    }
+  }
+
+  // Initialize scroll button visibility
+  useEffect(() => {
+    checkScrollButtons()
+    window.addEventListener("resize", checkScrollButtons)
+    return () => window.removeEventListener("resize", checkScrollButtons)
+  }, [])
+
+  // Scroll the categories container left or right
+  const scroll = (direction: "left" | "right") => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 200 // Adjust as needed
+      const newScrollLeft =
+        direction === "left"
+          ? scrollContainerRef.current.scrollLeft - scrollAmount
+          : scrollContainerRef.current.scrollLeft + scrollAmount
+
+      scrollContainerRef.current.scrollTo({
+        left: newScrollLeft,
+        behavior: "smooth",
+      })
+
+      // Update scroll button visibility after scrolling
+      setTimeout(checkScrollButtons, 300)
+    }
+  }
 
   return (
     <section className="py-20 bg-background">
@@ -67,24 +106,54 @@ export default function PortfolioGrid() {
         >
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Our Work</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            A showcase of our minimalist designs and creative solutions.
+            A showcase of our innovative software solutions and digital experiences.
           </p>
         </motion.div>
 
-        <div className="flex justify-center space-x-4 mb-8">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setFilter(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+        {/* Categories with horizontal scrolling on mobile */}
+        <div className="relative mb-8">
+          {/* Left scroll button */}
+          <button
+            onClick={() => scroll("left")}
+            className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 rounded-full p-1 shadow-md ${
+              showLeftScroll ? "opacity-100" : "opacity-0 pointer-events-none"
+            } transition-opacity md:hidden`}
+            aria-label="Scroll categories left"
+          >
+            <ChevronLeft className="h-5 w-5 text-foreground" />
+          </button>
+
+          {/* Scrollable container */}
+          <div
+            ref={scrollContainerRef}
+            className="flex overflow-x-auto scrollbar-hide py-2 px-6 md:px-0 md:justify-center md:flex-wrap md:space-y-2 space-x-4"
+            onScroll={checkScrollButtons}
+          >
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setFilter(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap flex-shrink-0 ${
+                  filter === category
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          {/* Right scroll button */}
+          <button
+            onClick={() => scroll("right")}
+            className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 rounded-full p-1 shadow-md ${
+              showRightScroll ? "opacity-100" : "opacity-0 pointer-events-none"
+            } transition-opacity md:hidden`}
+            aria-label="Scroll categories right"
+          >
+            <ChevronRight className="h-5 w-5 text-foreground" />
+          </button>
         </div>
 
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -117,12 +186,7 @@ export default function PortfolioGrid() {
                 <div className="p-6">
                   <div className="text-sm font-medium text-primary mb-1">{project.category}</div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">{project.title}</h3>
-                  <a
-                    href="https://www.flowersandsaints.com.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline inline-flex items-center"
-                  >
+                  <a href="#" className="text-primary hover:underline inline-flex items-center">
                     View Project
                     <svg
                       className="w-4 h-4 ml-2"

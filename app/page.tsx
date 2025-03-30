@@ -7,13 +7,14 @@ import Marquee from "./components/Marquee"
 import ContactForm from "./components/ContactForm"
 import NewsletterSubscribe from "./components/NewsletterSubscribe"
 import AnimatedBubbles from "./components/AnimatedBubbles"
+import SoftwareSolutions from "./components/WearYourStory"
 
 export default function Home() {
   return (
     <div className="relative">
       <AnimatedBubbles />
       <Hero />
-      <WearYourStory />
+      <SoftwareSolutions />
       <FeatureCarousel />
       <PortfolioGrid />
       <Timeline />
