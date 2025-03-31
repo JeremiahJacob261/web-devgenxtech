@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Send, Youtube, ExternalLink } from "lucide-react"
 import ContactForm from "../components/ContactForm"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Contact Us | DevgenxTech",
@@ -39,11 +40,11 @@ export default function ContactPage() {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Visit Us</h3>
               <p className="text-muted-foreground">
-                123 Tech Avenue
+              Ezeudoka Crescent plot 625 Trans Nkisi Layout , 
                 <br />
-                San Francisco, CA 94105
+                Onitsha,
                 <br />
-                United States
+             Nigeria   
               </p>
             </div>
 
@@ -53,7 +54,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Call Us</h3>
               <p className="text-muted-foreground">
-                +1 (555) 123-4567
+              +234 8163979924
                 <br />
                 Monday to Friday
               </p>
@@ -65,9 +66,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Email Us</h3>
               <p className="text-muted-foreground">
-                info@DevgenxTech.dev
-                <br />
-                support@DevgenxTech.dev
+              info@devgenxtech.com
               </p>
             </div>
 
@@ -85,6 +84,233 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+
+    {/* Social Media Showcase */}
+    <section className="py-16 bg-gradient-to-b from-background to-secondary/10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-foreground text-center mb-8">Connect With Us</h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
+            Follow us on social media to stay updated with our latest projects, tech insights, and company news. We're
+            always sharing valuable content to help you grow your digital presence.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* YouTube Card */}
+            <div className="bg-background rounded-xl overflow-hidden shadow-lg hover-lift group">
+              <div className="h-48 bg-red-600 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Youtube className="w-20 h-20 text-white" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white font-bold">YouTube</h3>
+                  <p className="text-white/80 text-sm">@devgenxtech</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Watch our tutorials, tech reviews, and behind-the-scenes content on our YouTube channel.
+                </p>
+                <a
+                  href="https://youtube.com/@devgenxtech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline"
+                >
+                  Visit our channel <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* LinkedIn Card */}
+            <div className="bg-background rounded-xl overflow-hidden shadow-lg hover-lift group">
+              <div className="h-48 bg-blue-700 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Linkedin className="w-20 h-20 text-white" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white font-bold">LinkedIn</h3>
+                  <p className="text-white/80 text-sm">Chioke Gabrielchidera</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Connect with our team and stay updated with our professional insights and company updates.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/chioke-gabrielchidera"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline"
+                >
+                  Connect with us <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Instagram Card */}
+            <div className="bg-background rounded-xl overflow-hidden shadow-lg hover-lift group">
+              <div className="h-48 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Instagram className="w-20 h-20 text-white" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white font-bold">Instagram</h3>
+                  <p className="text-white/80 text-sm">@devgenxtech.official</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Follow our Instagram for visual updates, project highlights, and behind-the-scenes content.
+                </p>
+                <a
+                  href="https://www.instagram.com/devgenxtech.official"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline"
+                >
+                  Follow us <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Facebook Card */}
+            <div className="bg-background rounded-xl overflow-hidden shadow-lg hover-lift group">
+              <div className="h-48 bg-blue-600 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Facebook className="w-20 h-20 text-white" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white font-bold">Facebook</h3>
+                  <p className="text-white/80 text-sm">Devgenxtech</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Join our Facebook community for updates, tech discussions, and exclusive content.
+                </p>
+                <a
+                  href="https://www.facebook.com/share/17SNdchiuV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline"
+                >
+                  Like our page <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* WhatsApp Channel Card */}
+            <div className="bg-background rounded-xl overflow-hidden shadow-lg hover-lift group">
+              <div className="h-48 bg-green-500 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M9.5 13.5c.5 1 1.5 1 2.5 1s2-.5 2.5-1" />
+                  </svg>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white font-bold">WhatsApp Channel</h3>
+                  <p className="text-white/80 text-sm">DevGenXTech</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Join our WhatsApp channel for instant updates, tips, and direct communication with our team.
+                </p>
+                <a
+                  href="https://whatsapp.com/channel/0029VavPU1I9RZAPTW88qj2y"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline"
+                >
+                  Join our channel <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Telegram Channel Card */}
+            <div className="bg-background rounded-xl overflow-hidden shadow-lg hover-lift group">
+              <div className="h-48 bg-blue-500 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Send className="w-20 h-20 text-white" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white font-bold">Telegram Channel</h3>
+                  <p className="text-white/80 text-sm">@devgenxtech</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Subscribe to our Telegram channel for tech news, tutorials, and exclusive offers.
+                </p>
+                <a
+                  href="https://t.me/devgenxtech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline"
+                >
+                  Join our channel <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* YouTube Channel Preview */}
+          <div className="mt-16 bg-background rounded-xl overflow-hidden shadow-lg p-6">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/3">
+                <Image
+                  src="https://sjc.microlink.io/-3hj3OSkwTNmYUu3J9KIkxCCOVkhVVzZDGbCJR-Xt5g_vbcnRgLvY6DwfNAVKo1J0JkOXmchPY2SJwSyp6AJcg.jpeg"
+                  alt="DevGenXTech YouTube Channel"
+                  width={400}
+                  height={300}
+                  className="rounded-lg shadow-md"
+                />
+              </div>
+              <div className="md:w-2/3">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Our YouTube Channel</h3>
+                <p className="text-muted-foreground mb-6">
+                  Subscribe to our YouTube channel for in-depth tutorials, tech reviews, and insights into web and app
+                  development. We regularly post content about AdMob integration, web design, hosting solutions, and
+                  more to help you grow your digital presence and technical skills.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <a
+                    href="https://youtube.com/@devgenxtech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full inline-flex items-center transition-colors"
+                  >
+                    <Youtube className="mr-2 h-5 w-5" /> Subscribe
+                  </a>
+                  <a
+                    href="https://youtube.com/@devgenxtech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-secondary hover:bg-secondary/80 text-foreground px-6 py-3 rounded-full inline-flex items-center transition-colors"
+                  >
+                    <ExternalLink className="mr-2 h-5 w-5" /> View Channel
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Map Section */}
       <section className="py-16">

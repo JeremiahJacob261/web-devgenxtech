@@ -57,6 +57,15 @@ export default function Header() {
           >
             About
           </Link>
+
+          <Link
+            href="/blog"
+            className={`text-sm font-semibold leading-6 transition-colors ${
+              isActive("/blog") ? "text-primary" : "text-foreground hover:text-primary"
+            }`}
+          >
+            Blog
+          </Link>
           <Link
             href="/contact"
             className={`text-sm font-semibold leading-6 transition-colors ${
@@ -122,6 +131,18 @@ export default function Header() {
               >
                 About
               </Link>
+
+              <Link
+                href="/blog"
+                className={`block rounded-md px-3 py-2 text-base font-medium ${
+                  isActive("/blog")
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground hover:bg-secondary hover:text-primary"
+                }`}
+              >
+                Blog
+              </Link>
+
               <Link
                 href="/contact"
                 className={`block rounded-md px-3 py-2 text-base font-medium ${

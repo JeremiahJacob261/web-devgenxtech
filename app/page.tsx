@@ -8,6 +8,7 @@ import ContactForm from "./components/ContactForm"
 import NewsletterSubscribe from "./components/NewsletterSubscribe"
 import AnimatedBubbles from "./components/AnimatedBubbles"
 import SoftwareSolutions from "./components/WearYourStory"
+import BlogPreview from "./components/BlogPreview"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <PortfolioGrid />
       <Timeline />
       <Marquee />
+      <BlogPreview />
       <ContactForm />
       <NewsletterSubscribe />
     </div>

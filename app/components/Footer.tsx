@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1: Company Info */}
           <div>
-            <h2 className="text-white text-xl font-semibold mb-6">DevgenxTech</h2>
+            <img src="/logolong.svg" alt="DevgenxTech Logo" className="h-8 mb-6" />
             <p className="text-gray-400 text-sm mb-6">
               Empowering businesses with innovative software solutions that drive growth, enhance user engagement, and
               maximize revenue in today's digital landscape.
@@ -58,7 +58,7 @@ export default function Footer() {
                 { name: "App Development", link: "/academy#app-development" },
                 { name: "Support", link: "/contact" },
                 { name: "Resources", link: "/academy" },
-                { name: "Blog", link: "/academy" },
+                { name: "Blog", link: "/blog" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.link} className="hover:text-white transition-colors">
