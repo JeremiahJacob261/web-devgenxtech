@@ -13,7 +13,6 @@ import BlogPreview from "./components/BlogPreview"
 export default function Home() {
   return (
     <div className="relative">
-      <AnimatedBubbles />
       <Hero />
       <SoftwareSolutions />
       <FeatureCarousel />
