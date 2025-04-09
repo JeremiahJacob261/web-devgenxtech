@@ -8,9 +8,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "HealthTrack Mobile App",
-    description: "Comprehensive health monitoring application with AdMob integration, enabling users to track their fitness and wellness goals effectively.",
-    imageUrl: "/placeholder.svg?height=600&width=800",
+    title: "Convert Website to Mobile App",
+    description: "Transform your existing website into a fully functional mobile application, ensuring seamless performance and user experience.",
+    imageUrl: "/server1.jpeg?height=600&width=800",
     category: "Mobile App",
   },
   {
