@@ -29,10 +29,10 @@ const projects = [
   },
   {
     id: 4,
-    title: "AdMob Revenue Optimizer",
-    description: "AI-powered tool for maximizing mobile ad revenue, offering real-time insights and optimization strategies.",
-    imageUrl: "/placeholder.svg?height=800&width=600",
-    category: "AdMob Solutions",
+    title: "Modern Shippig Website",
+    description: "Innovative shipping platform with real-time tracking, user-friendly interface, and advanced analytics for efficient logistics management.",
+    imageUrl: "/shipping.png?height=800&width=600",
+    category: "Enterprise Software",
   },
   {
     id: 5,
@@ -43,9 +43,9 @@ const projects = [
   },
   {
     id: 6,
-    title: "Social Media Analytics",
-    description: "Comprehensive platform for tracking social media performance, providing actionable insights to boost engagement and reach.",
-    imageUrl: "/placeholder.svg?height=800&width=600",
+    title: "Premium Mobile App",
+    description: "High-end mobile application designed for luxury brands, offering exclusive features and a premium user experience.",
+    imageUrl: "/appspre.jpeg?height=800&width=600",
     category: "Data Analytics",
   },
 ]

@@ -49,6 +49,15 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-x-12">
+
+        <Link
+            href="/"
+            className={`text-sm font-semibold leading-6 transition-colors ${
+              isActive("/") ? "text-primary" : "text-foreground hover:text-primary"
+            }`}
+          >
+            Home
+          </Link>
           <Link
             href="/about"
             className={`text-sm font-semibold leading-6 transition-colors ${
@@ -66,6 +75,15 @@ export default function Header() {
           >
             Blog
           </Link>
+          <Link
+            href="/portfolio"
+            className={`text-sm font-semibold leading-6 transition-colors ${
+              isActive("/portfolio") ? "text-primary" : "text-foreground hover:text-primary"
+            }`}
+          >
+            Portfolio
+          </Link>
+
           <Link
             href="/contact"
             className={`text-sm font-semibold leading-6 transition-colors ${
@@ -121,6 +139,17 @@ export default function Header() {
             transition={{ duration: 0.3 }}
           >
             <div className="space-y-1 px-4 pb-4 pt-2 bg-background/95 backdrop-blur-md border-t border-border">
+            <Link
+                href="/"
+                className={`block rounded-md px-3 py-2 text-base font-medium ${
+                  isActive("/")
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground hover:bg-secondary hover:text-primary"
+                }`}
+              >
+                Home
+              </Link>
+            
               <Link
                 href="/about"
                 className={`block rounded-md px-3 py-2 text-base font-medium ${
@@ -142,7 +171,16 @@ export default function Header() {
               >
                 Blog
               </Link>
-
+              <Link
+                href="/portfolio"
+                className={`block rounded-md px-3 py-2 text-base font-medium ${
+                  isActive("/blog")
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground hover:bg-secondary hover:text-primary"
+                }`}
+              >
+                Portfolio
+              </Link>
               <Link
                 href="/contact"
                 className={`block rounded-md px-3 py-2 text-base font-medium ${
