@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { supabase } from '@/lib/supabase'
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 
@@ -36,10 +37,30 @@ export default function ContactForm() {
     setIsSubmitting(true)
     // Simulate API call
     setTimeout(() => {
-      console.log(values)
-      setIsSubmitting(false)
+          const sendForm = async () =>{
+            try{
+                const { data,error } = await supabase
+                .from('forms')
+                .insert({ 
+                  name:values.name,
+                  email:values.email,
+                  phone:values.phoneNumber,
+                  budget:values.budget,
+                  message:values.message
+                 });
+                 setIsSubmitting(false)
       form.reset()
       alert("Thank you for your message. We'll get back to you soon!")
+            } catch(e){
+              console.log(e); //handle errors
+              setIsSubmitting(false)
+              alert("An Error Ocurred, please try again!")
+            }
+          }
+          sendForm();
+      //this piece of code is expected to make a post request to the database
+      console.log(values)
+      
     }, 2000)
   }
 
