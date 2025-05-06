@@ -38,7 +38,7 @@ export default function Hero() {
             <Link href="/academy" className="apple-button">
               Explore Our Services
             </Link>
-            <Link href="/contact" className="text-sm font-semibold leading-6 text-foreground flex items-center">
+            <Link href="https://cal.com/devgenxtech-zltruj/30min" target="_blank" className="text-sm font-semibold leading-6 text-foreground flex items-center">
               Get a Free Consultation <ArrowRightIcon className="ml-1 h-4 w-4" />
             </Link>
           </motion.div>
