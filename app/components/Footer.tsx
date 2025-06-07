@@ -124,7 +124,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/chioke-gabrielchidera"
+                href="https://www.linkedin.com/company/devgenxtech-limited"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-colors"
@@ -303,7 +303,7 @@ export default function Footer() {
                 <Instagram size={18} />
               </a>
               <a
-                href="https://www.linkedin.com/in/chioke-gabrielchidera"
+                href="https://www.linkedin.com/company/devgenxtech-limited"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white"

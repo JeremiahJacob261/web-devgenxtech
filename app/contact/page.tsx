@@ -138,7 +138,7 @@ export default function ContactPage() {
                   Connect with our team and stay updated with our professional insights and company updates.
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/chioke-gabrielchidera"
+                  href="https://www.linkedin.com/company/devgenxtech-limited"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-primary hover:underline"
