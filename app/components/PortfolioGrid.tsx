@@ -29,10 +29,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "Modern Shippig Website",
+    title: "Modern Shipping Website",
     description: "Innovative shipping platform with real-time tracking, user-friendly interface, and advanced analytics for efficient logistics management.",
     imageUrl: "/shipping.png?height=800&width=600",
     category: "Enterprise Software",
+    link:"https://railwayshipping.demo.devgenxtech.com/"
   },
   {
     id: 5,
@@ -186,7 +187,7 @@ export default function PortfolioGrid() {
                 <div className="p-6">
                   <div className="text-sm font-medium text-primary mb-1">{project.category}</div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">{project.title}</h3>
-                  <a href="#" className="text-primary hover:underline inline-flex items-center">
+                  <a href={project?.link} target="_blank" className="text-primary hover:underline inline-flex items-center">
                     View Project
                     <svg
                       className="w-4 h-4 ml-2"
