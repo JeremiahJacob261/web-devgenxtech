@@ -41,7 +41,7 @@ export default function Header() {
             <span className="sr-only">DevgenxTech</span>
             <img
               className="h-8 w-auto"
-              src="/logolong.svg"
+              src={theme === "dark" ? "/logolong.svg" : "/logolong.png"}
               alt="DevGenxtech Logo"
             />
           </Link>
