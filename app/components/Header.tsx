@@ -41,7 +41,7 @@ export default function Header() {
             <span className="sr-only">DevgenxTech</span>
             <img
               className="h-8 w-auto"
-              src={theme === "dark" ? "/logolong.svg" : "/logolong.png"}
+              src={"/logolong.svg"}
               alt="DevGenxtech Logo"
             />
           </Link>
@@ -105,11 +105,11 @@ export default function Header() {
         <div className="flex items-center gap-4 md:flex-1 md:justify-end">
           {mounted && (
             <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onClick={() => setTheme("dark")}
               className="rounded-full p-2 bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
               aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             >
-              {theme === "dark" ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
+              {theme ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
             </button>
           )}
 
