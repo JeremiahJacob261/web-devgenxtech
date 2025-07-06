@@ -49,7 +49,7 @@ export const blogPosts = [
       tags: ["AdMob", "Mobile Apps", "Monetization", "Revenue Optimization"],
       publishedAt: "2023-11-15T10:30:00Z",
       readTime: "8 min read",
-      featuredImage: "/maximizing-admob-revenue.webp?height=600&width=1200",
+      featuredImage: "/maximizing-admob-revenue.webp",
     },
     {
       id: 2,
@@ -132,7 +132,7 @@ export const blogPosts = [
       tags: ["Mobile Apps", "Cross-Platform", "Native Development", "React Native", "Flutter"],
       publishedAt: "2023-10-28T14:45:00Z",
       readTime: "10 min read",
-      featuredImage: "/cross-platform-vs-native?height=600&width=1200",
+      featuredImage: "/cross-platform-vs-native.png",
     },
     {
       id: 3,
@@ -267,7 +267,7 @@ export const blogPosts = [
       tags: ["Databases", "Cloud", "Mobile Apps", "Firebase", "MongoDB"],
       publishedAt: "2023-09-12T09:15:00Z",
       readTime: "12 min read",
-      featuredImage: "/cloud-database-solutions.png?height=600&width=1200",
+      featuredImage: "/cloud-database-solutions.png",
     },
     {
       id: 4,

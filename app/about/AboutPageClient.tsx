@@ -103,7 +103,7 @@ export default function AboutPageClient() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 md:py-24">
+      {/* <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-foreground text-center mb-16">Meet Our Team</h2>
 
@@ -159,7 +159,7 @@ export default function AboutPageClient() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary/5">
