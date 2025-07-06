@@ -130,7 +130,7 @@ export default function ContactPage() {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-white font-bold">LinkedIn</h3>
-                  <p className="text-white/80 text-sm">Chioke Gabrielchidera</p>
+                  <p className="text-white/80 text-sm">Devgenxtech</p>
                 </div>
               </div>
               <div className="p-6">

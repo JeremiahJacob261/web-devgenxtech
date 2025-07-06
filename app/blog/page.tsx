@@ -76,7 +76,7 @@ export default async function BlogPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={post.featuredImage || "/placeholder.svg"}
+                    src={post.featuredImage}
                     alt={post.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"

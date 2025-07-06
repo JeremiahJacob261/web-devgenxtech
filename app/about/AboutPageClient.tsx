@@ -47,9 +47,13 @@ export default function AboutPageClient() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/handgear.jpg?height=400&width=600"
                 alt="Our development team at work"
-                fill
+                objectFit="cover"
+                width={
+                  600
+                }
+                height={400}
                 className="object-cover"
               />
             </div>
