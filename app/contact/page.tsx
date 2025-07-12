@@ -316,13 +316,18 @@ export default function ContactPage() {
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-background rounded-xl overflow-hidden shadow-lg">
-            <div className="h-[400px] bg-secondary/20 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-muted-foreground mb-2">Interactive Map</p>
-                <p className="text-sm text-muted-foreground">
-                  (In a real implementation, this would be an embedded Google Map or similar)
-                </p>
-              </div>
+            <div className="h-[400px] relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126903.88516006308!2d6.683333!3d6.133333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDgnMDAuMCJOIDfCsDQxJzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1641234567890!5m2!1sen!2sng"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="DevgenxTech Office Location"
+                className="rounded-xl"
+              />
             </div>
           </div>
         </div>
