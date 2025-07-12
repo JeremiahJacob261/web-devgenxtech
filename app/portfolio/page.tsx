@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import PortfolioGrid from "./PortfolioGrid"
 
 export const metadata: Metadata = {
-  title: "Portfolio | TechSolutions",
+  title: "Portfolio | Devgenxtech",
   description: "Explore our portfolio of mobile apps, web applications, and software solutions.",
 }
 

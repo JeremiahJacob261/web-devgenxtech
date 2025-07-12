@@ -121,7 +121,7 @@ export const blogPosts = [
         <h2>Conclusion</h2>
         <p>There's no one-size-fits-all answer to the native vs. cross-platform debate. The right choice depends on your specific project requirements, budget constraints, timeline, and team expertise.</p>
         
-        <p>At TechSolutions, we have expertise in both native and cross-platform development and can help you determine the best approach for your specific needs. Contact us for a consultation to discuss your project requirements.</p>
+        <p>At Devgenxtech, we have expertise in both native and cross-platform development and can help you determine the best approach for your specific needs. Contact us for a consultation to discuss your project requirements.</p>
       `,
       author: {
         name: "Michael Rodriguez",
@@ -256,7 +256,7 @@ export const blogPosts = [
         <h2>Conclusion</h2>
         <p>There's no one-size-fits-all database solution for mobile apps. Each option offers different tradeoffs between development simplicity, performance, flexibility, and cost.</p>
         
-        <p>At TechSolutions, we have experience implementing all these database solutions and can help you select and implement the right choice for your specific requirements. Contact us to discuss your project needs.</p>
+        <p>At Devgenxtech, we have experience implementing all these database solutions and can help you select and implement the right choice for your specific requirements. Contact us to discuss your project needs.</p>
       `,
       author: {
         name: "David Patel",
@@ -371,7 +371,7 @@ export const blogPosts = [
         <h2>Conclusion</h2>
         <p>Exceptional mobile UI design balances aesthetics with functionality, platform conventions with innovation, and simplicity with capability. By applying these principles, you can create mobile experiences that not only look beautiful but also truly enhance users' lives through thoughtful, intuitive interactions.</p>
         
-        <p>At TechSolutions, our UI/UX team specializes in creating mobile interfaces that delight users while achieving business objectives. Contact us to discuss how we can elevate your mobile app's user experience.</p>
+        <p>At Devgenxtech, our UI/UX team specializes in creating mobile interfaces that delight users while achieving business objectives. Contact us to discuss how we can elevate your mobile app's user experience.</p>
       `,
       author: {
         name: "Jessica Kim",
@@ -563,7 +563,7 @@ export const blogPosts = [
         
         <p>Remember that even the most successful apps continue to evolve based on user feedback and changing market conditions. The most important factor in long-term success is your ability to listen to users, adapt quickly, and continuously improve your offering.</p>
         
-        <p>Need help with your app launch? TechSolutions offers comprehensive app launch services, from technical preparation to marketing strategy. Contact us to ensure your app makes the impact it deserves.</p>
+        <p>Need help with your app launch? Devgenxtech offers comprehensive app launch services, from technical preparation to marketing strategy. Contact us to ensure your app makes the impact it deserves.</p>
       `,
       author: {
         name: "Emma Wilson",

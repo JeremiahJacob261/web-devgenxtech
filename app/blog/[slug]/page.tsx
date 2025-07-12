@@ -5,24 +5,25 @@ import { notFound } from "next/navigation"
 import { CalendarIcon, Clock, Tag, ArrowLeft, Share2, Facebook, Twitter, Linkedin } from "lucide-react"
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 // Generate metadata for the page
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post: { tags: string[]; [key: string]: any } = await getBlogPost(params.slug)
+  const { slug } = await params
+  const post: { tags: string[]; [key: string]: any } = await getBlogPost(slug)
 
   if (!post) {
     return {
-      title: "Post Not Found | TechSolutions",
+      title: "Post Not Found | Devgenxtech",
       description: "The requested blog post could not be found.",
     }
   }
 
   return {
-    title: `${post.title} | TechSolutions Blog`,
+    title: `${post.title} | Devgenxtech Blog`,
     description: post.excerpt,
   }
 }
@@ -44,7 +45,8 @@ async function getBlogPost(slug: string) {
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = await getBlogPost(params.slug)
+  const { slug } = await params
+  const post = await getBlogPost(slug)
 
   if (!post) {
     notFound()
@@ -181,7 +183,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 />
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">About {post.author.name}</h3>
-                  <p className="text-muted-foreground mb-2">{post.author.role} at TechSolutions</p>
+                  <p className="text-muted-foreground mb-2">{post.author.role} at Devgenxtech</p>
                   <p className="text-muted-foreground">
                     Expert in mobile development and software engineering with over 10 years of experience building
                     solutions for startups and enterprise clients.
@@ -209,7 +211,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 >
                   <div className="relative h-40 overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
+                      src={`/${["/maximizing-admob-revenue.webp", "/cross-platform-vs-native.png", "/cloud-database-solutions.png", "/ui-design-principles.png", "/app-launch-checklist.png"][relatedPost - 1]}`}
                       alt="Related post"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

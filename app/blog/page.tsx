@@ -4,7 +4,7 @@ import Image from "next/image"
 import { CalendarIcon, Clock, Tag } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Blog | TechSolutions",
+  title: "Blog | Devgenxtech",
   description: "Insights, tutorials, and news about mobile app development, AdMob integration, and software solutions.",
 }
 
