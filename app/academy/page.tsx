@@ -297,21 +297,21 @@ export default function ServicesPage() {
                   "DevgenxTech transformed our business with a custom mobile app that increased customer engagement by 45%. Their AdMob integration strategy also helped us generate significant revenue.",
                 name: "Mark Johnson",
                 role: "CEO, RetailConnect",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/profiles/pro1.jpg?height=100&width=100",
               },
               {
                 quote:
                   "Working with DevgenxTech was a game-changer for our startup. Their expertise in cross-platform development allowed us to launch on both iOS and Android simultaneously, saving us time and resources.",
                 name: "Sarah Williams",
                 role: "Founder, HealthTech",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/profiles/pro2.jpg?height=100&width=100",
               },
               {
                 quote:
                   "The team at DevgenxTech delivered a complex enterprise solution that streamlined our operations and reduced costs. Their technical expertise and project management were exceptional.",
                 name: "David Chen",
                 role: "CTO, LogisticsPro",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/profiles/pro3.jpg?height=100&width=100",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-background p-6 rounded-xl shadow-md">

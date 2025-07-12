@@ -43,7 +43,7 @@ export const blogPosts = [
       author: {
         name: "Sarah Chen",
         role: "AdMob Specialist",
-        avatar: "/placeholder.svg?height=100&width=100",
+        avatar: "/profiles/pro4.jpg?height=100&width=100",
       },
       category: "Mobile Monetization",
       tags: ["AdMob", "Mobile Apps", "Monetization", "Revenue Optimization"],
@@ -126,7 +126,7 @@ export const blogPosts = [
       author: {
         name: "Michael Rodriguez",
         role: "Mobile Development Lead",
-        avatar: "/placeholder.svg?height=100&width=100",
+        avatar: "/profiles/pro5.jpg?height=100&width=100",
       },
       category: "App Development",
       tags: ["Mobile Apps", "Cross-Platform", "Native Development", "React Native", "Flutter"],
@@ -261,7 +261,7 @@ export const blogPosts = [
       author: {
         name: "David Patel",
         role: "Backend Development Lead",
-        avatar: "/placeholder.svg?height=100&width=100",
+        avatar: "/profiles/pro3.jpg?height=100&width=100",
       },
       category: "Backend Development",
       tags: ["Databases", "Cloud", "Mobile Apps", "Firebase", "MongoDB"],
@@ -376,7 +376,7 @@ export const blogPosts = [
       author: {
         name: "Jessica Kim",
         role: "UI/UX Director",
-        avatar: "/placeholder.svg?height=100&width=100",
+        avatar: "/profiles/pro3.jpg?height=100&width=100",
       },
       category: "UI/UX Design",
       tags: ["UI Design", "UX", "Mobile Apps", "Design Principles"],
@@ -568,7 +568,7 @@ export const blogPosts = [
       author: {
         name: "Emma Wilson",
         role: "Project Management Director",
-        avatar: "/placeholder.svg?height=100&width=100",
+        avatar: "/profiles/pro4.jpg?height=100&width=100",
       },
       category: "Project Management",
       tags: ["App Launch", "Mobile Apps", "Marketing", "Project Management"],
