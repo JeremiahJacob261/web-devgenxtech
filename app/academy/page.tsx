@@ -125,7 +125,7 @@ export default function ServicesPage() {
               </div>
               <div className="relative h-[400px] lg:h-auto">
                 <Image
-                  src="/placeholder.svg?height=800&width=600"
+                  src="/admob.jpg?height=800&width=600"
                   alt="AdMob Integration Service"
                   fill
                   className="object-cover"
@@ -149,7 +149,7 @@ export default function ServicesPage() {
                   "Native iOS applications built with Swift for exceptional performance and user experience on iPhone and iPad.",
                 icon: <Smartphone className="h-10 w-10 text-primary" />,
                 features: ["Swift & SwiftUI", "Apple Design Guidelines", "App Store Optimization"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/ios.jpg?height=400&width=600",
               },
               {
                 title: "Android App Development",
@@ -157,7 +157,7 @@ export default function ServicesPage() {
                   "Powerful Android applications developed with Kotlin or Java for the diverse Android ecosystem.",
                 icon: <Smartphone className="h-10 w-10 text-primary" />,
                 features: ["Kotlin & Java", "Material Design", "Google Play Store Optimization"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/android.png?height=400&width=600",
               },
               {
                 title: "Cross-Platform Development",
@@ -165,14 +165,14 @@ export default function ServicesPage() {
                   "Cost-effective solutions using React Native or Flutter to target both iOS and Android with a single codebase.",
                 icon: <Smartphone className="h-10 w-10 text-primary" />,
                 features: ["React Native", "Flutter", "Code Reusability"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/cross.webp?height=400&width=600",
               },
               {
                 title: "Web Application Development",
                 description: "Responsive web applications built with modern frameworks like React, Angular, or Vue.js.",
                 icon: <Globe className="h-10 w-10 text-primary" />,
                 features: ["React.js", "Next.js", "Progressive Web Apps"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/webapp.png?height=400&width=600",
               },
               {
                 title: "Backend Development",
@@ -180,7 +180,7 @@ export default function ServicesPage() {
                   "Scalable and secure backend services to power your applications with Node.js, Express, and cloud technologies.",
                 icon: <Server className="h-10 w-10 text-primary" />,
                 features: ["Node.js", "Express", "Cloud Deployment"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/backend.webp?height=400&width=600",
               },
               {
                 title: "Database Solutions",
@@ -188,7 +188,7 @@ export default function ServicesPage() {
                   "Custom database design and implementation using SQL and NoSQL technologies for optimal data management.",
                 icon: <Database className="h-10 w-10 text-primary" />,
                 features: ["MongoDB", "PostgreSQL", "Firebase"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/db.jpg?height=400&width=600",
               },
             ].map((service, index) => (
               <div key={index} className="bg-background rounded-xl overflow-hidden shadow-md hover-lift">
@@ -232,27 +232,27 @@ export default function ServicesPage() {
                 description:
                   "User-centered design that combines aesthetics with functionality for intuitive and engaging digital experiences.",
                 features: ["User Research", "Wireframing & Prototyping", "Usability Testing"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/uiux.jpg?height=400&width=600",
               },
               {
                 title: "DevOps & Cloud Services",
                 description:
                   "Streamlined development operations and cloud infrastructure for reliable, scalable applications.",
                 features: ["CI/CD Pipelines", "AWS/Azure/GCP", "Containerization"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/devops.webp?height=400&width=600",
               },
               {
                 title: "Quality Assurance & Testing",
                 description:
                   "Comprehensive testing strategies to ensure your software is bug-free and performs optimally.",
                 features: ["Automated Testing", "Performance Testing", "Security Testing"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/qatest.png?height=400&width=600",
               },
               {
                 title: "Maintenance & Support",
                 description: "Ongoing technical support and maintenance to keep your applications running smoothly.",
                 features: ["24/7 Support", "Performance Monitoring", "Regular Updates"],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/support.jpeg?height=400&width=600",
               },
             ].map((service, index) => (
               <div
