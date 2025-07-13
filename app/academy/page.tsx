@@ -125,7 +125,7 @@ export default function ServicesPage() {
               </div>
               <div className="relative h-[400px] lg:h-auto">
                 <Image
-                  src="/admob.jpg?height=800&width=600"
+                  src="/admob.jpg.jpg?height=800&width=600"
                   alt="AdMob Integration Service"
                   fill
                   className="object-cover"
@@ -344,7 +344,7 @@ export default function ServicesPage() {
             start building together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="apple-button">
+            <Link href="https://cal.com/devgenxtech-zltruj/30min" target="_blank" className="apple-button">
               Get a Free Consultation
             </Link>
             <Link
