@@ -272,12 +272,12 @@ export default function ContactPage() {
           <div className="mt-16 bg-background rounded-xl overflow-hidden shadow-lg p-6">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3">
-                <Image
-                  src="https://sjc.microlink.io/-3hj3OSkwTNmYUu3J9KIkxCCOVkhVVzZDGbCJR-Xt5g_vbcnRgLvY6DwfNAVKo1J0JkOXmchPY2SJwSyp6AJcg.jpeg"
-                  alt="DevGenXTech YouTube Channel"
-                  width={400}
-                  height={300}
-                  className="rounded-lg shadow-md"
+                <img
+                src="/yt.png"
+                alt="DevGenXTech YouTube Channel"
+                width={400}
+                height={300}
+                className="rounded-lg shadow-md w-full h-auto mt-4 md:mt-0 md:w-full md:h-auto"
                 />
               </div>
               <div className="md:w-2/3">
