@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false)
   const [isTooltipVisible, setIsTooltipVisible] = useState(false)
-  const phoneNumber = "+2348163979924"
+  const phoneNumber = "+447577387972"
 
   // Show button after scrolling down a bit
   useEffect(() => {

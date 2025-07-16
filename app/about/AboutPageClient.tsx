@@ -103,52 +103,52 @@ export default function AboutPageClient() {
       </section>
 
       {/* Team Section */}
-      {/* <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-foreground text-center mb-16">Meet Our Team</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {
-                name: "Alex Johnson",
-                role: "Founder & CEO",
-                bio: "With over 15 years of experience in software development, Alex brings strategic vision and technical leadership to every project.",
-                image: "/placeholder.svg?height=400&width=400",
-              },
+              // {
+              //   name: "Alex Johnson",
+              //   role: "Founder & CEO",
+              //   bio: "With over 15 years of experience in software development, Alex brings strategic vision and technical leadership to every project.",
+              //   image: "/placeholder.svg?height=400&width=400",
+              // },
               {
                 name: "Sarah Chen",
                 role: "CTO",
                 bio: "Sarah's expertise in mobile development and cloud architecture has been instrumental in our most innovative solutions.",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "/profiles/Sarah_Chen.jpg?height=400&width=400",
               },
               {
                 name: "Michael Rodriguez",
                 role: "Mobile Development Lead",
                 bio: "Michael specializes in native and cross-platform mobile development with deep expertise in AdMob integration.",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "/profiles/Michael_Rodriguez.jpg?height=400&width=400",
               },
               {
                 name: "Jessica Kim",
                 role: "UI/UX Director",
                 bio: "Jessica ensures our applications are not just functional but deliver exceptional user experiences across all platforms.",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "/profiles/Jessica_Kim.jpg?height=400&width=400",
               },
               {
                 name: "David Patel",
                 role: "Backend Development Lead",
                 bio: "David's expertise in scalable architecture and cloud solutions forms the backbone of our enterprise applications.",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "/profiles/David_Patel.jpg?height=400&width=400",
               },
               {
                 name: "Emma Wilson",
                 role: "Project Management Director",
                 bio: "Emma's methodical approach to project management ensures our solutions are delivered on time and within budget.",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "/profiles/Emma_Wilson.jpg?height=400&width=400",
               },
             ].map((member, index) => (
               <div key={index} className="bg-background rounded-xl overflow-hidden shadow-md hover-lift">
-                <div className="h-64 relative">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                <div className="h-64 relative bg-gradient-to-br from-primary/10 to-secondary/20">
+                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-contain" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-foreground">{member.name}</h3>
@@ -159,7 +159,7 @@ export default function AboutPageClient() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary/5">

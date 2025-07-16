@@ -97,7 +97,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="text-center mb-8">
-              <p className="text-white text-lg">+234 816 397 9924</p>
+              <p className="text-white text-lg">+44 7577 387972</p>
             </div>
 
             {/* Social Media Links */}
