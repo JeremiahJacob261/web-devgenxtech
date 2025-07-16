@@ -211,7 +211,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 >
                   <div className="relative h-40 overflow-hidden">
                     <Image
-                      src={`/${["/maximizing-admob-revenue.webp", "/cross-platform-vs-native.png", "/cloud-database-solutions.png", "/ui-design-principles.png", "/app-launch-checklist.png"][relatedPost - 1]}`}
+                      src={`${["/maximizing-admob-revenue.webp", "/cross-platform-vs-native.png", "/cloud-database-solutions.png", "/ui-design-principles.png", "/app-launch-checklist.png"][relatedPost - 1]}`}
                       alt="Related post"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

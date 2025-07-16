@@ -54,7 +54,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Call Us</h3>
               <p className="text-muted-foreground">
-              +234 8163979924
+              +44 7577 387972
                 <br />
                 Monday to Friday
               </p>
