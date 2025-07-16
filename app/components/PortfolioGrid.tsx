@@ -60,7 +60,7 @@ const projects = [
 		title: "Real Estate Services Platform",
 		description:
 			"Comprehensive real estate platform providing property listings, market insights, and professional real estate services.",
-		imageUrl: "/real-estate-services.jpg?height=600&width=800",
+		imageUrl: "/por4.jpg?height=600&width=800",
 		category: "Real Estate",
 		link: "https://www.realestateservices.co.za/",
 	},
@@ -69,7 +69,7 @@ const projects = [
 		title: "Galetti Property Leasing",
 		description:
 			"Professional property leasing platform offering streamlined rental processes and comprehensive property management solutions.",
-		imageUrl: "/galetti-property.jpg?height=800&width=600",
+		imageUrl: "/por5.jpg?height=800&width=600",
 		category: "Real Estate",
 		link: "https://galetti.co.za/",
 	},
@@ -78,7 +78,7 @@ const projects = [
 		title: "Rent and Realty Florida",
 		description:
 			"Florida-based rental and property management platform connecting tenants with quality rental properties and real estate services.",
-		imageUrl: "/rent-realty-fl.jpg?height=600&width=800",
+		imageUrl: "/por3.jpg?height=600&width=800",
 		category: "Real Estate",
 		link: "https://www.rentandrealtyfl.com/",
 	},
@@ -87,7 +87,7 @@ const projects = [
 		title: "Anester Hair Care Shop",
 		description:
 			"Premium hair care e-commerce platform offering professional hair products and styling services with modern shopping experience.",
-		imageUrl: "/anester-haircare.jpg?height=800&width=600",
+		imageUrl: "/por2.jpg?height=800&width=600",
 		category: "E-commerce",
 		link: "https://anestherhaircare.bumpa.shop/",
 	},
@@ -96,7 +96,7 @@ const projects = [
 		title: "Protech Furniture Solutions",
 		description:
 			"Modern furniture retail platform showcasing quality furniture collections with elegant design and seamless shopping experience.",
-		imageUrl: "/protech-furniture.jpg?height=600&width=800",
+		imageUrl: "/por.jpg?height=600&width=800",
 		category: "E-commerce",
 		link: "https://www.protechng.com/",
 	},
