@@ -26,9 +26,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Innovative software solutions that transform businesses. We specialize in mobile app development, AdMob
-            monetization, and custom software that drives results.
-          </motion.p>
+            We create smart software solutions that help businesses grow. From building websites, mobile apps to maximizing AdMob revenue and crafting custom Ai tools, we deliver real results. </motion.p>
           <motion.div
             className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4"
             initial={{ opacity: 0, y: 20 }}
