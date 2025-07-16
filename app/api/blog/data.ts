@@ -382,7 +382,7 @@ export const blogPosts = [
       tags: ["UI Design", "UX", "Mobile Apps", "Design Principles"],
       publishedAt: "2023-08-05T13:20:00Z",
       readTime: "9 min read",
-      featuredImage: "/ui-design-principles.png",
+      featuredImage: "/ui-design-principles.jpg",
     },
     {
       id: 5,

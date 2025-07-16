@@ -79,7 +79,7 @@ export default async function BlogPage() {
                     src={post.featuredImage}
                     alt={post.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 bg-primary/90 text-primary-foreground text-xs font-medium px-2 py-1 rounded-full">
                     {post.category}

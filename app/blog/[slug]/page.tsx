@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { CalendarIcon, Clock, Tag, ArrowLeft, Share2, Facebook, Twitter, Linkedin } from "lucide-react"
+import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react"
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -74,9 +75,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </Link>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {post.tags.map((tag) => (
+              {post.tags.map((tag: string, index: number) => (
                 <span
-                  key={tag}
+                  key={index}
                   className="inline-flex items-center text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded-full"
                 >
                   <Tag className="h-3 w-3 mr-1" />
@@ -211,10 +212,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 >
                   <div className="relative h-40 overflow-hidden">
                     <Image
-                      src={`${["/maximizing-admob-revenue.webp", "/cross-platform-vs-native.png", "/cloud-database-solutions.png", "/ui-design-principles.png", "/app-launch-checklist.png"][relatedPost - 1]}`}
+                      src={`${["/maximizing-admob-revenue.webp", "/cross-platform-vs-native.png", "/cloud-database-solutions.png", "/ui-design-principles.jpg", "/app-launch-checklist.png"][relatedPost - 1]}`}
                       alt="Related post"
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-contain transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-4">
