@@ -125,7 +125,7 @@ export default function AboutPageClient() {
                 name: "Michael Rodriguez",
                 role: "Mobile Development Lead",
                 bio: "Michael specializes in native and cross-platform mobile development with deep expertise in AdMob integration.",
-                image: "/profiles/Michael_Rodriguez.jpg?height=400&width=400",
+                image: "/profiles/Michael_Rodriguez.jpg",
               },
               {
                 name: "Jessica Kim",

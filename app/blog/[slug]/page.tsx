@@ -122,7 +122,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
-              <Image src={post.featuredImage || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
+              <Image src={post.featuredImage || "/placeholder.svg"} alt={post.title} fill className="object-contain" />
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 >
                   <div className="relative h-40 overflow-hidden">
                     <Image
-                      src={`${["/maximizing-admob-revenue.webp", "/cross-platform-vs-native.png", "/cloud-database-solutions.png", "/ui-design-principles.jpg", "/app-launch-checklist.png"][relatedPost - 1]}`}
+                      src={`${["/maximizing-admob-revenue.webp", "/cross-platform-vs-native.png", "/cloud-database-solutions.png", "/ui-design-principles.jpg", "/app-launch-checklist.jpg"][relatedPost - 1]}`}
                       alt="Related post"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-105"

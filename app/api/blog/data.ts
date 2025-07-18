@@ -574,7 +574,7 @@ export const blogPosts = [
       tags: ["App Launch", "Mobile Apps", "Marketing", "Project Management"],
       publishedAt: "2023-07-20T11:45:00Z",
       readTime: "15 min read",
-      featuredImage: "/app-launch-checklist.png?height=600&width=1200",
+      featuredImage: "/app-launch-checklist.jpg",
     },
   ]
   
