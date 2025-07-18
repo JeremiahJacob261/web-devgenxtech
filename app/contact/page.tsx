@@ -56,6 +56,8 @@ export default function ContactPage() {
               <p className="text-muted-foreground">
               +44 7577 387972
                 <br />
+                +234 816 397 9924
+                <br/>
                 Monday to Friday
               </p>
             </div>

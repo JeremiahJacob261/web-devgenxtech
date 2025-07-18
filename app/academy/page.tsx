@@ -347,12 +347,12 @@ export default function ServicesPage() {
             <Link href="https://cal.com/devgenxtech-zltruj/30min" target="_blank" className="apple-button">
               Get a Free Consultation
             </Link>
-            <Link
+            {/* <Link
               href="/contact"
               className="px-6 py-3 rounded-full bg-secondary text-foreground font-semibold transition-all duration-300 hover:bg-secondary/80"
             >
               View Our Portfolio
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

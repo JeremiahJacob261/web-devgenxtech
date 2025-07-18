@@ -14,22 +14,14 @@ const projects = [
 		imageUrl: "/server1.jpeg?height=600&width=800",
 		category: "Mobile App",
 	},
-	{
-		id: 2,
-		title: "E-commerce Platform",
-		description:
-			"Scalable online shopping solution with advanced analytics, providing seamless user experience and robust backend support.",
-		imageUrl: "/server2.jpeg?height=800&width=600",
-		category: "Web App",
-	},
-	{
-		id: 3,
-		title: "Banking Website",
-		description:
-			"Modern and secure banking interface designed to enhance user experience and streamline financial operations.",
-		imageUrl: "/server3.jpeg?height=600&width=800",
-		category: "UI/UX Design",
-	},
+	// {
+	// 	id: 2,
+	// 	title: "E-commerce Platform",
+	// 	description:
+	// 		"Scalable online shopping solution with advanced analytics, providing seamless user experience and robust backend support.",
+	// 	imageUrl: "/server2.jpeg?height=800&width=600",
+	// 	category: "Web App",
+	// },
 	{
 		id: 4,
 		title: "Modern Shipping Website",
@@ -99,6 +91,23 @@ const projects = [
 		imageUrl: "/por.jpg?height=600&width=800",
 		category: "E-commerce",
 		link: "https://www.protechng.com/",
+	},
+	{
+		id: 12,
+		title: "Equita Courier Service",
+		description:
+			"Comprehensive cargo solutions platform providing reliable courier and shipping services with real-time tracking and logistics management.",
+		imageUrl: "/shipping.png?height=600&width=800",
+		category: "Enterprise Software",
+		link: "https://equitacourierservice.com/",
+	},
+	{
+		id: 3,
+		title: "Banking Website",
+		description:
+			"Modern and secure banking interface designed to enhance user experience and streamline financial operations.",
+		imageUrl: "/server3.jpeg?height=600&width=800",
+		category: "UI/UX Design",
 	},
 ]
 

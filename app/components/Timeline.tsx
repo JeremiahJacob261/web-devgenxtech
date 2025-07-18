@@ -9,7 +9,7 @@ const timelineEvents = [
     title: "DevgenxTech Founded",
     description: "Our journey began with a passion for innovative software solutions.",
     details:
-      "Founded by Alex Johnson and Sarah Chen, DevgenxTech started as a small development studio in San Francisco, combining their expertise in mobile development and cloud architecture.",
+      "Founded by Gabriel.C, DevgenxTech started as a small development studio in San Francisco, combining their expertise in mobile development and cloud architecture.",
   },
   {
     year: 2019,

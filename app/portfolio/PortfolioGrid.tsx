@@ -112,6 +112,14 @@ const projects = [
 		client: "Protech Nigeria",
 		technologies: ["WooCommerce", "WordPress", "PHP"],
 	},
+	{
+		id: 14,
+		title: "Equita Courier Service",
+		category: "Enterprise Software",
+		image: "/shipping.png",
+		client: "Equita Courier",
+		technologies: ["React", "Node.js", "Express", "MongoDB"],
+	},
 ]
 
 export default function PortfolioGrid() {

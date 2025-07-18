@@ -96,9 +96,9 @@ export default function Footer() {
                 CONTACT US
               </Link>
             </div>
-            <div className="text-center mb-8">
+            {/* <div className="text-center mb-8">
               <p className="text-white text-lg">+44 7577 387972</p>
-            </div>
+            </div> */}
 
             {/* Social Media Links */}
             <div className="flex flex-wrap justify-center gap-4 mb-6">
